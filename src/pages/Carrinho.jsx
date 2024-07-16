@@ -8,7 +8,6 @@ import { CarrinhoContext } from "../context/CarrinhoContext";
 
 const Carrinho = ({
   adicionarProduto,
-  removerProduto,
   removerProdutoCarrinho,
   valorTotalCarrinho,
   quantidadeProdutos,
@@ -31,7 +30,6 @@ const Carrinho = ({
               <ListaProdutosCarrinho
                 carrinho={carrinho}
                 adicionarProduto={adicionarProduto}
-                removerProduto={removerProduto}
                 removerProdutoCarrinho={removerProdutoCarrinho}
               />
             </div>

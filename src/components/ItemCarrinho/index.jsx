@@ -8,7 +8,6 @@ const ItemCarrinho = ({
   itemCarrinho,
   removerProdutoCarrinho,
   adicionarProduto,
-  removerProduto,
 }) => {
   return (
     <li key={itemCarrinho.id}>
@@ -24,7 +23,6 @@ const ItemCarrinho = ({
           <Quantidade
             itemCarrinho={itemCarrinho}
             adicionarProduto={adicionarProduto}
-            removerProduto={removerProduto}
           />
           <Botao
             variant="deleteItem"

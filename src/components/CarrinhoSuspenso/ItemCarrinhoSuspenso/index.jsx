@@ -6,8 +6,7 @@ import ValorFormatado from "@/components/ValorFormatado";
 const ItemCarrinhoSuspenso = ({
   itemCarrinho,
   removerProdutoCarrinho,
-  adicionarProduto,
-  removerProduto,
+  adicionarProduto
 }) => {
   return (
     <li>
@@ -23,8 +22,7 @@ const ItemCarrinhoSuspenso = ({
             <Quantidade
               itemCarrinho={itemCarrinho}
               adicionarProduto={adicionarProduto}
-              removerProduto={removerProduto}
-            />
+           />
             <ValorFormatado valor={itemCarrinho.preco} />
           </div>
           <Botao
