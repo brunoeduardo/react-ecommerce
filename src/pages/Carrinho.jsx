@@ -7,8 +7,7 @@ import BannerCarrinho from "@/components/BannerCarrinho";
 import { CarrinhoContext } from "../context/CarrinhoContext";
 
 const Carrinho = ({
-  adicionarProduto,
-  removerProdutoCarrinho,
+  
   valorTotalCarrinho,
   quantidadeProdutos,
 }) => {
@@ -29,8 +28,6 @@ const Carrinho = ({
               </Titulo>
               <ListaProdutosCarrinho
                 carrinho={carrinho}
-                adicionarProduto={adicionarProduto}
-                removerProdutoCarrinho={removerProdutoCarrinho}
               />
             </div>
             <Sumario

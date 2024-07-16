@@ -2,25 +2,11 @@ import React from "react";
 import Botao from "@/components/Botao";
 import Titulo from "@/components/Titulo";
 import { useLocation } from "react-router-dom";
-import { useContext } from "react";
-import { CarrinhoContext } from "../../context/CarrinhoContext";
+import { useCarrinhoContext } from "../../hooks/useCarrinhoContext";
 
-const Quantidade = ({ itemCarrinho, adicionarProduto }) => {
+const Quantidade = ({ itemCarrinho }) => {
   const location = useLocation();
-  const {carrinho, setCarrinho} = useContext(CarrinhoContext)
-
-  const removerProduto = (idProduto) => {
-    const listaProdutos = []
-    carrinho.forEach(item => {
-      if(item.id === idProduto && item.quantidade > 1) {
-              item.quantidade -= 1;
-              listaProdutos.push(item);
-      }
-      if( item.id !== idProduto) listaProdutos.push(item);
-    });
-
-    setCarrinho(listaProdutos)
-  } 
+  const {removerProduto, adicionarProduto} = useCarrinhoContext()
 
   return (
     <div
