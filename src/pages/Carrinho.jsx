@@ -30,10 +30,7 @@ const Carrinho = ({
                 carrinho={carrinho}
               />
             </div>
-            <Sumario
-              valorTotalCarrinho={valorTotalCarrinho}
-              quantidadeProdutos={quantidadeProdutos}
-            />
+            <Sumario/>
           </div>
         </section>
       </main>
